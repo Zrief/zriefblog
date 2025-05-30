@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Zrief's Blog",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "zh-CN",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
@@ -29,26 +29,28 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          // 浅色模式配色方案
+          light: "rgba(250, 248, 246, 1)",        // 页面背景色 - 米白色
+          lightgray: "rgba(224, 220, 216, 1)",    // 边框颜色 - 浅灰色
+          gray: "rgba(240, 237, 233, 1)",         // 图表链接和较重边框 - 灰色
+          darkgray: "rgba(109, 106, 103, 1)",     // 正文文本 - 深灰色
+          dark: "rgba(58, 56, 54, 1)",            // 标题文本和图标 - 近黑色
+          secondary: "rgba(196, 93, 101, 1)",     // 链接颜色、当前图表节点 - 深红色
+          tertiary: "rgba(95, 174, 183, 1)",      // 悬停状态和已访问图表节点 - 青色
+          highlight: "rgba(245, 227, 214, 1)",    // 内部链接背景、高亮文本、代码高亮行 - 浅褐色
+          textHighlight: "rgba(168, 216, 224, 1)",// Markdown高亮文本背景 - 浅蓝色
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          // 深色模式配色方案
+          light: "rgba(37, 42, 53, 1)",           // 页面背景色 - 深石板灰
+          lightgray: "rgba(60, 65, 77, 1)",       // 边框颜色 - 灰蓝色
+          gray: "rgba(52, 58, 71, 1)",            // 图表链接和较重边框 - 深灰色
+          darkgray: "rgba(197, 201, 209, 1)",     // 正文文本 - 浅灰色
+          dark: "rgba(230, 233, 239, 1)",         // 标题文本和图标 - 近白色
+          secondary: "rgba(110, 130, 150, 1)",    // 链接颜色、当前图表节点 - 深蓝色
+          tertiary: "rgba(217, 122, 115, 1)",     // 悬停状态和已访问图表节点 - 橙红色
+          highlight: "rgba(74, 93, 122, 1)",      // 内部链接背景、高亮文本、代码高亮行 - 深蓝色
+          textHighlight: "rgba(255, 217, 201, 1)",// Markdown高亮文本背景 - 浅橙色
         },
       },
     },
